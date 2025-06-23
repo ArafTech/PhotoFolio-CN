@@ -1,12 +1,45 @@
-# React + Vite
+# 📸 ArafTech PhotoFolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**PhotoFolio** is a modern photo album management app built with **React + Vite**, allowing users to create albums, upload images directly from their local computer (using Base64), and edit them—all without relying on Firebase Storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📝 Create and manage albums
+- 📁 Upload images directly from your local computer (Base64 encoded)
+- 🖼️ View, edit, and delete images inside albums
+- 🔐 Firebase Firestore integration for data persistence
+- ⚡ Built with Vite for fast development
+- 📦 No Firebase Storage dependency (no plan upgrade needed!)
+- 🔔 Toast notifications for user feedback
+- 🌓 Clean, modular component structure using CSS Modules
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📁 Project Structure
+
+araftech-photofolio-cn/
+├── public/ # Static files (manifest, index.html, etc.)
+├── src/
+│ ├── App.jsx # Main app component
+│ ├── main.jsx # Vite entry point
+│ ├── firebaseinit.js # Firebase configuration and initialization
+│ ├── components/
+│ │ ├── NavBar/ # Navigation bar
+│ │ ├── AlbumForm/ # Album creation form
+│ │ ├── AlbumLists/ # Album list display and logic
+│ │ └── ImageList/ # Image management inside albums
+├── index.html # Root HTML file
+├── package.json # Project dependencies and scripts
+├── vite.config.js # Vite configuration
+└── README.md # You're reading it
+
+📌 Roadmap
+ Add image upload from computer
+
+ Album cover support
+
+ Edit/Delete images
+
+ 
